@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS Selector: là chọn thẻ để thay đổi định dạng -->
+     <style>
+        /* * 1 : Các selector đơn giản  */
+        *{
+            font-size: 30px;
+        }
+        h1{
+            color: red;
+        }
+        .border{
+            border: 10px solid blueviolet;
+        }
+        #main-header{
+            color: brown;
+        }
+        /*  2. CSS Selector nâng cao */
+        /* [] : Chọ thẻ có thuộc tính là target */
+        a[target="_blank"]{
+            color: black;
+        }
+
+        /* Pseudo Select (chọ lớp ảo) */
+        a:hover {
+            color: blueviolet;
+        }
+        li:first-child{
+            color: beige;
+        }
+        li:last-child{
+            color: burlywood
+        }
+        li:nth-child(2){
+            color: aqua;
+        }
+        h1::before{
+            /* Thêm nội dung trước thẻ  */
+            /* Bắt buộc phải có content (có thể rỗng hoặc ko) */
+            content: "><><><><"
+        }
+        h1::after{
+            content: "<><><><>";
+        }
+     </style>
+</head>
+
+<body>
+    <h1 class="border radius"> Tiêu để 1</h1>
+    <div id="main-header"> Tiêu đề chính website</div>
+    <!-- Có 2 loại chính là: block và inline 
+        block: thẻ chiếm diện tích chiều ngang 100% so với màn hình
+        Inline: Thẻ có diện tích dựa vào nội dung thẻ
+    -->
+    <a href="https://mindx.edu.vn/" target="_blank">Mindx</a>
+    <p>abc</p>
+    <span>Test</span>
+    <a href="https://mindx.edu.vn/">Mindx 2</a>
+
+    <ul>
+        <li>Toán</li>
+        <li>Văn</li>
+        <li>Lý</li>
+        <li>Địa</li>
+    </ul>
+</body>
+
+</html>

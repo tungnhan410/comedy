@@ -1,0 +1,258 @@
+/* Thẻ sử dụng flex gọi là thẻ cha (flex container)
+    _ Thẻ nào nằm trong là thẻ con (flex item)
+*/
+
+:root{
+  --black-color:#272727;
+  --black-color2: #1d252c;
+  --black-color3: #0b254b;
+  --balck-color4: #1d293f;
+  --gray--color1:#849A8E;
+  --green-color : #56b280;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header,
+.header-center,
+.header-center a:first-child,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header {
+  justify-content: space-between;
+  /* margin: 24px auto; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 12px 100px;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.header-left .header-left-img {
+  width: 126px;
+  height: 34px;
+  object-fit: cover;
+}
+.header-center a{
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+.header-center {
+  gap: 24px ;
+}
+.header-right-icon{
+  font-size: 24px;
+  margin-left: 6px;
+}
+.header-left-icon{
+  font-size: 24px;
+  margin-left: 6px;
+}
+.banner{
+  margin-top: 61px;
+  background-image: url("../img/bg-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  display: flex ;
+
+}
+
+.banner-box{
+  background-color: #f7f8fa;
+  opacity: 80%;
+  border-radius: 2px;
+  width: 730px;
+  text-align: center ;
+  padding: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-box .banner-Box-title{
+  color: var(--black-color2);
+  font-size: 40px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.banner-box .banner-Box-desc{
+  color: var(--black-color2);
+  width: 450px;
+}
+
+.banner-box .banner-box-btn{
+  color:#f7f8fa;
+  padding: 4px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--green-color);
+  font-size: 21px;
+}
+
+.heading-title{
+  color: var(--black-color3);
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.heading-decs{
+  color: #5e6e89;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cột, 1fr: các phần tử bằng nhau*/
+  gap: 16px;
+}
+
+.product-item {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.product-item img{
+  width: 100%;
+}
+
+.product-name {
+  color: var(--balck-color4);
+  margin:  8px 0 ;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.product-decs {
+  color: var(--gray--color1);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.product-sell {
+  display: flex;
+  justify-content: space-between;
+  color: var(--green-color);
+  margin: 8px 0;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 500;
+}
+.product-btn{
+  color: white;
+  background-color: var(--green-color);
+  width: 100%;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.heading-title{
+  color: var(--black-color3);
+  font-size: 40px ;
+  font-weight:500 ;
+  text-align: center;
+  margin-top: 32px;
+}
+.heading-decs {
+  color: #5e6e89;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.header-right-info{
+  position: relative;
+}
+.header-right-list{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 130px;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: none;
+}
+.header-right-list li, .header-right{
+  cursor: pointer;
+}
+.header-right-list li:hover{
+  color: red;
+}
+.header-right-list li:first-child{
+  margin-bottom: 10px;
+}
+.header-right-info:hover .header-right-list{
+  display: block;
+}
+.header-right-info::before{
+  content: ""; 
+  position: absolute;
+  top: 40px;
+  width: 130px;
+  height: 30px;
+  /* background-color: red; */
+  z-index: 2;
+}
+
+@media screen and(max-width: 1280px){
+
+}
+@media screen and(max-width: 1024px){
+  
+}
+@media screen and(max-width: 768px){
+  .header{
+    padding: 12px 30px;
+  }
+}
+@media screen and(max-width: 640px){
+  .header-center{
+    display: none;
+  }
+
+  .header-right-info{
+    position: static;
+  }
+  .header-right-list{
+    width: 100vw;
+    /* display: block; */
+    height: 50vh;
+    top: 60px;
+  }
+  .banner{
+    height: 350px;
+  }
+  .banner-Box-desc{
+    width: 326px  ;
+  }
+  .product-container{
+    display: block;
+  }
+  .heading-decs{
+    margin-bottom: 56px;
+  }
+}
+@media screen and(max-width: 475px){
+  
+}

@@ -1,0 +1,199 @@
+/* Thẻ sử dụng flex gọi là thẻ cha (flex container)
+    _ Thẻ nào nằm trong là thẻ con (flex item)
+*/
+
+:root{
+  --black-color:#272727;
+  --black-color2: #1d252c;
+  --black-color3: #0b254b;
+  --green-color : #56b280;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header,
+.header-center,
+.header-center a:first-child {
+  display: flex;
+  align-items: center;
+}
+.header {
+  justify-content: space-between;
+  margin: 24px auto;
+}
+.header-left .header-left-img {
+  width: 300px;
+  height: 204px;
+  object-fit: cover;
+}
+.header-center a{
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+.header-center {
+  gap: 24px ;
+}
+.header-right-icon{
+  font-size: 24px;
+  margin-left: 6px;
+}
+.header-left-icon{
+  font-size: 24px;
+  margin-left: 6px;
+}
+.banner{
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  display: flex ;
+}
+
+.banner-box{
+  opacity: 80%;
+  border-radius: 2px;
+  width: 760px;
+  text-align: center ;
+  padding: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-box .banner-Box-title{
+  color: var(--black-color2);
+  font-size: 50px;
+  font-weight: 700;
+  margin: 20px 0;
+  margin-top: 250px;
+}
+
+.banner-box .banner-Box-tt{
+  color: var(--black-color2);
+  font-size: 25px;
+  font-weight: 800;
+  align-self: flex-start;
+}
+
+
+.banner-box .banner-Box-tsp{
+  color: var(--black-color2);
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+
+.banner-box .banner-Box-text{
+  color: var(--black-color2);
+  font-size: 20px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+
+  .banner-box .banner-Box-msp{
+  color: var(--black-color2);
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: -70px;
+  align-self: flex-end;
+}
+
+
+.banner-box .banner-Box-text2{
+  color: var(--black-color2);
+  font-size: 20px;
+  margin-top: 15px;
+  align-self: flex-end;
+}
+
+.banner-box .banner-Box-lsp{
+  color: var(--black-color2);
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.banner-box .banner-Box-text3{
+  color: var(--black-color2);
+  font-size: 20px;  
+  margin-top: 15px;
+  align-self: flex-start;
+}
+
+  .banner-box .banner-Box-gia{
+  color: var(--black-color2);
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: -60px;
+  align-self: flex-end;
+}
+
+.banner-box .banner-Box-text4{
+  color: var(--black-color2);
+  font-size: 20px;  
+  margin-top: 9px;
+  align-self: flex-end;
+}
+
+.banner-box .banner-Box-mtsp{
+  color: var(--black-color2);
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.banner-box .banner-Box-text5{
+  color: var(--black-color2);
+  font-size: 20px;  
+  margin-top: 19px;
+  align-self: flex-start;
+}
+
+
+.banner-box .banner-Box-hasp{
+  color: var(--black-color2);
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.upload-area {
+  display: flex;
+  justify-content: center; /* canh giữa */
+  margin-top: 10px;
+  display: flex;
+  margin-top: 800px ;
+  align-items: center;
+
+}
+
+.upload-label {
+  border: 2px dashed #ccc;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 300px;
+  transition: background-color 0.3s;
+  display: block;
+}
+
+.upload-label:hover {
+  background-color: #f9f9f9;
+}
+
+.upload-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: inline;
+}
+

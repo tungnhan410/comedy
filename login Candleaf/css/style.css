@@ -1,0 +1,175 @@
+/* Thẻ sử dụng flex gọi là thẻ cha (flex container)
+    _ Thẻ nào nằm trong là thẻ con (flex item)
+*/
+
+:root{
+  --black-color:#272727;
+  --black-color2: #1d252c;
+  --black-color3: #0b254b;
+  --gray--color1:#849A8E;
+  --green-color : #56b280;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header,
+.header-center,
+.header-center a:first-child {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+.banner{
+  background-image: url("../img/bg-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex ;
+
+}
+
+.banner-box{
+  background-color: #f7f8fa;
+  opacity: 80%;
+  border-radius: 2px;
+  width: 730px;
+  text-align: center ;
+  padding: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-box .banner-Box-title{
+  color: var(--black-color2);
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 700;
+  margin: 20px 0;
+  font-family: 'Manrope', sans-serif; /* Kiểu chữ */
+  font-style: Bold;
+  color: #000000;
+}
+
+.banner-box .banner-Box-desc{
+  color: var(--black-color2);
+  width: 450px;
+  font-family: 'Manrope' sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  align-self: flex-start;
+
+
+}
+
+.banner-box .banner-Box-input{
+  align-self: start;
+  font-family: 'Manrope' sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #000000;
+}
+input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+
+.btn {
+        background: #56b280;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+
+    .card {
+        padding: 30px;
+        border-radius: 16px;
+        width: 320px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+
+
+    .btn:hover {
+        background: #4aa070;
+    }
+    .divider {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        color: #888;
+        font-size: 14px;
+    }
+    .divider::before, .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+    }
+
+        p a {
+        color: #56b280;
+        text-decoration: none;
+    }
+
+
+        .social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .social img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+
+
+.eye-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+.eye-icon:hover {
+    opacity: 1;
+    }
+
+
+
+ .banner-box .eye-off-outline{
+  width: 24px;
+  height: 24px;
+ }

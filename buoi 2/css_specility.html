@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        Thứ tự ưu tiên trong CSS
+        1*
+        2 Tag(thẻ 1 , p , a,...)
+        3 class(.),  Attribute ([]) , pseudo (: ::)
+        4 Id(#)
+        5 Inline
+        6 !important
+        */
+        #text{
+            color: red;
+        }
+
+        .para{
+            color:blue;
+        }
+        h1{
+            color: orange !important;
+        }
+        #text{
+            color:pink;
+        }
+    </style>
+</head>
+
+    
+<body>
+    <h1 class="para" id="text" style="color: aqua;">Hello</h1>
+</body>
+
+
+</html>

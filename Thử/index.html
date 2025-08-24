@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sảnh Chờ ZingSpeed Demo</title>
+<style>
+    body {
+        margin: 0;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .lobby {
+        position: relative;
+        width: 1280px; /* 16:9 ratio */
+        height: 720px;
+        background: url('/Thử/img/zingspeed\ mobile.png') no-repeat center/cover; /* nền tạm */
+        background-size: 90%;
+        overflow: hidden;
+        border: 2px solid #333;
+        border-radius: 8px;
+    }
+
+    /* Nhân vật */
+    .character {
+        position: absolute;
+        bottom: 50px;
+        left: 200px;
+        text-align: center;
+    }
+    .character img {
+        height: 500px;
+    }
+
+    /* Xe */
+    .car {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+    }
+    .car img {
+        height: 300px;
+    }
+
+    /* Nút xuất phát */
+    .start-btn {
+        position: absolute;
+        right: 50px;
+        bottom: 200px;
+    }
+    .start-btn img {
+        height: 120px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    .start-btn img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Thanh thông tin trên cùng */
+    .top-bar {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        font-size: 18px;
+        background: rgba(0,0,0,0.4);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .top-bar img {
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    /* Icon góc phải */
+    .top-icons {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        gap: 15px;
+    }
+    .top-icons img {
+        height: 40px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    .top-icons img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Menu dưới */
+    .bottom-menu {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .bottom-menu img {
+        height: 60px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    .bottom-menu img:hover {
+        transform: scale(1.1);
+    }
+</style>
+</head>
+<body>
+
+<div class="lobby">
+    <!-- Thanh thông tin người chơi -->
+    <div class="top-bar">
+        <img src="/Thử/img/avatar.jpg" alt="avatar">
+        <span>LV15 | TungNhan</span>
+        <span>💎 2200</span>
+    </div>
+
+    <!-- Icon góc phải -->
+    <div class="top-icons">
+        <img src="/Thử/img/shop.png" alt="shop">
+        <img src="/Thử/img/Tan Thu.png" alt="Tân Thủ">
+        <img src="/Thử/img/Hoat Dong.png" alt="Hoạt Động">
+    </div>
+
+    

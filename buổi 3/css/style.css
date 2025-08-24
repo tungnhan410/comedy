@@ -1,0 +1,105 @@
+/* thẻ sử dụng flex gọi là thẻ cha(flex container) 
+    - Thẻ nào nằm trong là thẻ con(flex item)
+*/
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #fdf6ef;
+  color: #1a1a1a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: transparent;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button.ghost {
+  border: 1px solid #000;
+  background: #fff;
+}
+
+button.solid {
+  background: linear-gradient(to right, #3d2b56, #000);
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero .webinar-badge {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+.hero p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button.outline {
+  background: white;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
+button.black {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.pattern {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.pattern img {
+  width: 100%;
+  display: block;
+}
